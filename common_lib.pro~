@@ -1,0 +1,97 @@
+#-------------------------------------------------
+#
+# Project created by QtCreator 2011-12-26T20:42:08
+#
+#-------------------------------------------------
+
+#QT       += core gui opengl
+QT += network
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+
+TEMPLATE = lib
+#CONFIG += staticlib
+TARGET = common
+
+DESTDIR     = ./bin/libs
+OBJECTS_DIR = ./bin/build/common_lib/.obj
+MOC_DIR     = ./bin/build/common_lib/.moc
+RCC_DIR     = ./bin/build/common_lib/.rcc
+UI_DIR      = ./bin/build/common_lib/.ui
+
+INCLUDEPATH += ./include
+
+win32:DEFINES += _CRT_SECURE_NO_WARNINGS
+
+SOURCES += \
+    ./src/GL/oglTextureRECT.cpp \
+    ./src/GL/oglTexture3D.cpp \
+    ./src/GL/oglTexture2D.cpp \
+    ./src/GL/oglTexture1D.cpp \
+    ./src/GL/oglTexture.cpp \
+    ./src/GL/oglFrameBufferObject.cpp \
+    ./src/GL/oglCommon.cpp \
+    ./src/GL/oglShader.cpp \
+    ./src/SCI/Timer.cpp \
+    ./src/SCI/Mat4.cpp \
+    ./src/SCI/Subset.cpp \
+    ./src/SCI/Graphics/MarchingCubes.cpp \
+    ./src/SCI/Camera/ThirdPersonCameraControls.cpp \
+    ./src/SCI/Camera/OrthoProjection.cpp \
+    ./src/SCI/Camera/LookAt.cpp \
+    ./src/SCI/Camera/FrustumProjection.cpp \
+    ./src/SCI/Camera/FirstPersonCameraControls.cpp \
+    ./src/SCI/Camera/CameraControls.cpp \
+    ./src/SCI/Colormap.cpp \
+    ./src/GL/oglFont.cpp \
+    ./src/QT/QExtendedMainWindow.cpp \
+    ./src/QT/QControlWidget.cpp \
+    ./src/QT/QExtendedVerticalSlider.cpp \
+    ./src/QT/QDoubleSlider.cpp \
+    ./src/SCI/SimpleHistogram.cpp
+
+#    ../../../Common/src/SCI/Network/QExtendedTcpSocket.cpp \
+
+#unix:SOURCES += ../../../Common/src/GL/glew.c
+
+HEADERS  += \
+    ./include/SCI/Vex4.h \
+    ./include/SCI/Vex3.h \
+    ./include/SCI/Vex2.h \
+    ./include/SCI/Mat4.h \
+    ./include/SCI/Timer.h \
+    ./include/SCI/Network/QExtendedTcpSocket.h \
+    ./include/SCI/Subset.h \
+    ./include/SCI/Network/QExtendedTcpServer.h \
+    ./include/SCI/Utility.h \
+    ./include/SCI/Graphics/MarchingCubes.h \
+    ./include/SCI/BoundingBox.h \
+    ./include/GL/oglTextureRECT.h \
+    ./include/GL/oglTexture3D.h \
+    ./include/GL/oglTexture2D.h \
+    ./include/GL/oglTexture1D.h \
+    ./include/GL/oglTexture.h \
+    ./include/GL/oglFrameBufferObject.h \
+    ./include/GL/oglCommon.h \
+    ./include/GL/oglShader.h \
+    ./include/SCI/Camera/ThirdPersonCameraControls.h \
+    ./include/SCI/Camera/Projection.h \
+    ./include/SCI/Camera/OrthoProjection.h \
+    ./include/SCI/Camera/LookAt.h \
+    ./include/SCI/Camera/FrustumProjection.h \
+    ./include/SCI/Camera/FirstPersonCameraControls.h \
+    ./include/SCI/Camera/CameraControls.h \
+    ./include/SCI/Colormap.h \
+    ./include/GL/oglFont.h \
+    ./include/SCI/VexN.h \
+    ./include/QT/QControlWidget.h \
+    ./include/QT/QExtendedMainWindow.h \
+    ./include/SCI/Geometry/CompGeom.h \
+    ./include/GL/glext.h \
+    ./include/QT/QExtendedVerticalSlider.h \
+    ./include/QT/QDoubleSlider.h \
+    ./include/SCI/SimpleHistogram.h
+
+
+
+
+
