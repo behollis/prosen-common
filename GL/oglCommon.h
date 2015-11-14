@@ -48,25 +48,8 @@ namespace oglWidgets {
     void checkGlError(const char* op);
 
 
-    inline void glSetMatrix( GLenum matmode, float * data = 0 ){
-        glMatrixMode( matmode );
-        glLoadIdentity();
-        if(data != 0){
-            glMultMatrixf( data );
-        }
-    }
-
-    inline void glDrawQuad(){
-        glColor3f( 1.0, 1.0, 1.0);
-        glBegin(GL_QUADS);
-            glTexCoord2f(0, 0); glVertex3f(-1, -1, 0 );
-            glTexCoord2f(0, 1);    glVertex3f(-1,  1, 0 );
-            glTexCoord2f(1, 1);    glVertex3f( 1,  1, 0 );
-            glTexCoord2f(1, 0);    glVertex3f( 1, -1, 0 );
-        glEnd();
-    }
-
-
+    void glSetMatrix( GLenum matmode, float * data = 0 );
+    void glDrawQuad();
 }
 
 #endif // OGLWIDGETS_OGLCOMMON_H

@@ -37,6 +37,9 @@ oglTexture2D::oglTexture2D(void) : oglTexture(GL_TEXTURE_2D) {
 
 oglTexture2D::~oglTexture2D(void){ }
 
+GLint oglTexture2D::GetWrapS(){ return wraps; }
+GLint oglTexture2D::GetWrapT(){ return wrapt; }
+
 bool oglTexture2D::SetBorderColor(float * bcolor){
     borderColor[0] = bcolor[0];
     borderColor[1] = bcolor[1];
