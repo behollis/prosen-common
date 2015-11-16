@@ -16,7 +16,7 @@
 **  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-%Module oglCommon
+%Module oglTextureRECT
 
 namespace oglWidgets {
 	class oglTextureRECT : public oglTexture2D
@@ -36,6 +36,6 @@ namespace oglWidgets {
         virtual bool CopyTexSubImage2D(GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei w, GLsizei h);
     };
 
-}
+};
 
 

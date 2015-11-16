@@ -1,13 +1,15 @@
 %Module oglTexture2D
 
-%HeaderCode
-#include <oglTexture2D.h>
-%End
-
 namespace oglWidgets {
 
     class oglTexture2D : public oglTexture
     {
+
+%TypeHeaderCode
+#include <oglTexture2D.h>
+%End
+
+
     public:
         oglTexture2D(void);
         //virtual ~oglTexture2D(void);
@@ -28,4 +30,4 @@ namespace oglWidgets {
         virtual bool CopyTexSubImage2D(GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei w, GLsizei h);
 
     };
-}
+};

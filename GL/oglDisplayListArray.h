@@ -19,8 +19,8 @@
 #ifndef OGLWIDGETS_OGLDISPLAYLISTARRAY_H
 #define OGLWIDGETS_OGLDISPLAYLISTARRAY_H
 
-#include <windows.h>
-#include <gl/gl.h>
+//#include <windows.h>
+#include <GL/gl.h>
 
 namespace oglWidgets {
 

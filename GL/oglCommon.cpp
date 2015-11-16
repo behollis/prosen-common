@@ -51,7 +51,7 @@ void oglWidgets::checkGlError(const char* op) {
     }
 }
 
-void  oglWidgets::glSetMatrix( GLenum matmode, float * data = 0 ){
+void  oglWidgets::glSetMatrix( GLenum matmode, float * data ){
 	glMatrixMode( matmode );
 	glLoadIdentity();
 	if(data != 0){

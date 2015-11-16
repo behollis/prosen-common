@@ -20,8 +20,8 @@
 #define OGLWIDGETS_OGLDISPLAYLIST_H
 
 
-#include <windows.h>
-#include <gl/gl.h>
+//#include <windows.h>
+#include <GL/gl.h>
 
 namespace oglWidgets {
 

@@ -1,0 +1,5 @@
+for f in *.pdf
+do
+	echo "running swig on - $f"
+	swig -python $f	
+done
