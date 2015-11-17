@@ -47,6 +47,7 @@ bool oglFont::Load( const char * fname ){
     //QFile file( QString(fname) );
     QString qfname = QString(fname);
     QFile file(qfname);
+    //QFile file(fname);
 
     if(!file.open( QIODevice::ReadOnly )){
         printf("oglFont: Cannot open file %s\n",fname);

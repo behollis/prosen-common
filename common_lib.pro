@@ -31,40 +31,40 @@ SOURCES += \
     ./GL/oglFrameBufferObject.cpp \
     ./GL/oglCommon.cpp \
     ./GL/oglShader.cpp \
-    ./SCI/Timer.cpp \
-    ./SCI/Mat4.cpp \
-    ./SCI/Subset.cpp \
-    ./SCI/Graphics/MarchingCubes.cpp \
-    ./SCI/Camera/ThirdPersonCameraControls.cpp \
-    ./SCI/Camera/OrthoProjection.cpp \
-    ./SCI/Camera/LookAt.cpp \
-    ./SCI/Camera/FrustumProjection.cpp \
-    ./SCI/Camera/FirstPersonCameraControls.cpp \
-    ./SCI/Camera/CameraControls.cpp \
-    ./SCI/Colormap.cpp \
+ #   ./SCI/Timer.cpp \
+ #   ./SCI/Mat4.cpp \
+ #   ./SCI/Subset.cpp \
+ #   ./SCI/Graphics/MarchingCubes.cpp \
+ #   ./SCI/Camera/ThirdPersonCameraControls.cpp \
+ #   ./SCI/Camera/OrthoProjection.cpp \
+ #   ./SCI/Camera/LookAt.cpp \
+ #   ./SCI/Camera/FrustumProjection.cpp \
+ #   ./SCI/Camera/FirstPersonCameraControls.cpp \
+ #   ./SCI/Camera/CameraControls.cpp \
+ #   ./SCI/Colormap.cpp \
     ./GL/oglFont.cpp \
-    ./QT/QExtendedMainWindow.cpp \
-    ./QT/QControlWidget.cpp \
-    ./QT/QExtendedVerticalSlider.cpp \
-    ./QT/QDoubleSlider.cpp \
-    ./SCI/SimpleHistogram.cpp
+ #   ./QT/QExtendedMainWindow.cpp \
+ #   ./QT/QControlWidget.cpp \
+ #   ./QT/QExtendedVerticalSlider.cpp \
+ #   ./QT/QDoubleSlider.cpp \
+ #   ./SCI/SimpleHistogram.cpp
 
 #    ../../../Common/src/SCI/Network/QExtendedTcpSocket.cpp \
 
 #unix:SOURCES += ../../../Common/src/GL/glew.c
 
 HEADERS  += \
-    ./SCI/Vex4.h \
-    ./SCI/Vex3.h \
-    ./SCI/Vex2.h \
-    ./SCI/Mat4.h \
-    ./SCI/Timer.h \
-    ./SCI/Network/QExtendedTcpSocket.h \
-    ./SCI/Subset.h \
-    ./SCI/Network/QExtendedTcpServer.h \
-    ./SCI/Utility.h \
-    ./SCI/Graphics/MarchingCubes.h \
-    ./SCI/BoundingBox.h \
+#    ./SCI/Vex4.h \
+#    ./SCI/Vex3.h \
+#    ./SCI/Vex2.h \
+#    ./SCI/Mat4.h \
+#    ./SCI/Timer.h \
+#    ./SCI/Network/QExtendedTcpSocket.h \
+#    ./SCI/Subset.h \
+#    ./SCI/Network/QExtendedTcpServer.h \
+#    ./SCI/Utility.h \
+#    ./SCI/Graphics/MarchingCubes.h \
+#    ./SCI/BoundingBox.h \
     ./GL/oglTextureRECT.h \
     ./GL/oglTexture3D.h \
     ./GL/oglTexture2D.h \
@@ -73,23 +73,23 @@ HEADERS  += \
     ./GL/oglFrameBufferObject.h \
     ./GL/oglCommon.h \
     ./GL/oglShader.h \
-    ./SCI/Camera/ThirdPersonCameraControls.h \
-    ./SCI/Camera/Projection.h \
-    ./SCI/Camera/OrthoProjection.h \
-    ./SCI/Camera/LookAt.h \
-    ./SCI/Camera/FrustumProjection.h \
-    ./SCI/Camera/FirstPersonCameraControls.h \
-    ./SCI/Camera/CameraControls.h \
-    ./SCI/Colormap.h \
+#    ./SCI/Camera/ThirdPersonCameraControls.h \
+#    ./SCI/Camera/Projection.h \
+#    ./SCI/Camera/OrthoProjection.h \
+#    ./SCI/Camera/LookAt.h \
+#    ./SCI/Camera/FrustumProjection.h \
+#    ./SCI/Camera/FirstPersonCameraControls.h \
+#    ./SCI/Camera/CameraControls.h \
+#    ./SCI/Colormap.h \
     ./GL/oglFont.h \
-    ./SCI/VexN.h \
-    ./QT/QControlWidget.h \
-    ./QT/QExtendedMainWindow.h \
-    ./SCI/Geometry/CompGeom.h \
+#    ./SCI/VexN.h \
+#    ./QT/QControlWidget.h \
+#    ./QT/QExtendedMainWindow.h \
+#    ./SCI/Geometry/CompGeom.h \
     ./GL/glext.h \
-    ./QT/QExtendedVerticalSlider.h \
-    ./QT/QDoubleSlider.h \
-    ./SCI/SimpleHistogram.h
+#    ./QT/QExtendedVerticalSlider.h \
+#    ./QT/QDoubleSlider.h \
+#    ./SCI/SimpleHistogram.h
 
 
 

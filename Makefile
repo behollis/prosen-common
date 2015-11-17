@@ -56,31 +56,7 @@ SOURCES       = GL/oglTextureRECT.cpp \
 		GL/oglFrameBufferObject.cpp \
 		GL/oglCommon.cpp \
 		GL/oglShader.cpp \
-		SCI/Timer.cpp \
-		SCI/Mat4.cpp \
-		SCI/Subset.cpp \
-		SCI/Graphics/MarchingCubes.cpp \
-		SCI/Camera/ThirdPersonCameraControls.cpp \
-		SCI/Camera/OrthoProjection.cpp \
-		SCI/Camera/LookAt.cpp \
-		SCI/Camera/FrustumProjection.cpp \
-		SCI/Camera/FirstPersonCameraControls.cpp \
-		SCI/Camera/CameraControls.cpp \
-		SCI/Colormap.cpp \
-		GL/oglFont.cpp \
-		QT/QExtendedMainWindow.cpp \
-		QT/QControlWidget.cpp \
-		QT/QExtendedVerticalSlider.cpp \
-		QT/QDoubleSlider.cpp \
-		SCI/SimpleHistogram.cpp bin/build/common_lib/.moc/moc_QExtendedTcpSocket.cpp \
-		bin/build/common_lib/.moc/moc_QExtendedTcpServer.cpp \
-		bin/build/common_lib/.moc/moc_Projection.cpp \
-		bin/build/common_lib/.moc/moc_OrthoProjection.cpp \
-		bin/build/common_lib/.moc/moc_FrustumProjection.cpp \
-		bin/build/common_lib/.moc/moc_QControlWidget.cpp \
-		bin/build/common_lib/.moc/moc_QExtendedMainWindow.cpp \
-		bin/build/common_lib/.moc/moc_QExtendedVerticalSlider.cpp \
-		bin/build/common_lib/.moc/moc_QDoubleSlider.cpp
+		GL/oglFont.cpp 
 OBJECTS       = bin/build/common_lib/.obj/oglTextureRECT.o \
 		bin/build/common_lib/.obj/oglTexture3D.o \
 		bin/build/common_lib/.obj/oglTexture2D.o \
@@ -89,32 +65,7 @@ OBJECTS       = bin/build/common_lib/.obj/oglTextureRECT.o \
 		bin/build/common_lib/.obj/oglFrameBufferObject.o \
 		bin/build/common_lib/.obj/oglCommon.o \
 		bin/build/common_lib/.obj/oglShader.o \
-		bin/build/common_lib/.obj/Timer.o \
-		bin/build/common_lib/.obj/Mat4.o \
-		bin/build/common_lib/.obj/Subset.o \
-		bin/build/common_lib/.obj/MarchingCubes.o \
-		bin/build/common_lib/.obj/ThirdPersonCameraControls.o \
-		bin/build/common_lib/.obj/OrthoProjection.o \
-		bin/build/common_lib/.obj/LookAt.o \
-		bin/build/common_lib/.obj/FrustumProjection.o \
-		bin/build/common_lib/.obj/FirstPersonCameraControls.o \
-		bin/build/common_lib/.obj/CameraControls.o \
-		bin/build/common_lib/.obj/Colormap.o \
-		bin/build/common_lib/.obj/oglFont.o \
-		bin/build/common_lib/.obj/QExtendedMainWindow.o \
-		bin/build/common_lib/.obj/QControlWidget.o \
-		bin/build/common_lib/.obj/QExtendedVerticalSlider.o \
-		bin/build/common_lib/.obj/QDoubleSlider.o \
-		bin/build/common_lib/.obj/SimpleHistogram.o \
-		bin/build/common_lib/.obj/moc_QExtendedTcpSocket.o \
-		bin/build/common_lib/.obj/moc_QExtendedTcpServer.o \
-		bin/build/common_lib/.obj/moc_Projection.o \
-		bin/build/common_lib/.obj/moc_OrthoProjection.o \
-		bin/build/common_lib/.obj/moc_FrustumProjection.o \
-		bin/build/common_lib/.obj/moc_QControlWidget.o \
-		bin/build/common_lib/.obj/moc_QExtendedMainWindow.o \
-		bin/build/common_lib/.obj/moc_QExtendedVerticalSlider.o \
-		bin/build/common_lib/.obj/moc_QDoubleSlider.o
+		bin/build/common_lib/.obj/oglFont.o
 DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/shell-unix.conf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/unix.conf \
@@ -173,18 +124,7 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/exceptions.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/yacc.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/lex.prf \
-		common_lib.pro SCI/Vex4.h \
-		SCI/Vex3.h \
-		SCI/Vex2.h \
-		SCI/Mat4.h \
-		SCI/Timer.h \
-		SCI/Network/QExtendedTcpSocket.h \
-		SCI/Subset.h \
-		SCI/Network/QExtendedTcpServer.h \
-		SCI/Utility.h \
-		SCI/Graphics/MarchingCubes.h \
-		SCI/BoundingBox.h \
-		GL/oglTextureRECT.h \
+		common_lib.pro GL/oglTextureRECT.h \
 		GL/oglTexture3D.h \
 		GL/oglTexture2D.h \
 		GL/oglTexture1D.h \
@@ -192,23 +132,8 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		GL/oglFrameBufferObject.h \
 		GL/oglCommon.h \
 		GL/oglShader.h \
-		SCI/Camera/ThirdPersonCameraControls.h \
-		SCI/Camera/Projection.h \
-		SCI/Camera/OrthoProjection.h \
-		SCI/Camera/LookAt.h \
-		SCI/Camera/FrustumProjection.h \
-		SCI/Camera/FirstPersonCameraControls.h \
-		SCI/Camera/CameraControls.h \
-		SCI/Colormap.h \
 		GL/oglFont.h \
-		SCI/VexN.h \
-		QT/QControlWidget.h \
-		QT/QExtendedMainWindow.h \
-		SCI/Geometry/CompGeom.h \
-		GL/glext.h \
-		QT/QExtendedVerticalSlider.h \
-		QT/QDoubleSlider.h \
-		SCI/SimpleHistogram.h GL/oglTextureRECT.cpp \
+		GL/glext.h GL/oglTextureRECT.cpp \
 		GL/oglTexture3D.cpp \
 		GL/oglTexture2D.cpp \
 		GL/oglTexture1D.cpp \
@@ -216,23 +141,7 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		GL/oglFrameBufferObject.cpp \
 		GL/oglCommon.cpp \
 		GL/oglShader.cpp \
-		SCI/Timer.cpp \
-		SCI/Mat4.cpp \
-		SCI/Subset.cpp \
-		SCI/Graphics/MarchingCubes.cpp \
-		SCI/Camera/ThirdPersonCameraControls.cpp \
-		SCI/Camera/OrthoProjection.cpp \
-		SCI/Camera/LookAt.cpp \
-		SCI/Camera/FrustumProjection.cpp \
-		SCI/Camera/FirstPersonCameraControls.cpp \
-		SCI/Camera/CameraControls.cpp \
-		SCI/Colormap.cpp \
-		GL/oglFont.cpp \
-		QT/QExtendedMainWindow.cpp \
-		QT/QControlWidget.cpp \
-		QT/QExtendedVerticalSlider.cpp \
-		QT/QDoubleSlider.cpp \
-		SCI/SimpleHistogram.cpp
+		GL/oglFont.cpp
 QMAKE_TARGET  = common
 DESTDIR       = bin/libs/#avoid trailing-slash linebreak
 TARGET        = libcommon.so.1.0.0
@@ -430,8 +339,8 @@ dist: distdir FORCE
 distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
-	$(COPY_FILE) --parents SCI/Vex4.h SCI/Vex3.h SCI/Vex2.h SCI/Mat4.h SCI/Timer.h SCI/Network/QExtendedTcpSocket.h SCI/Subset.h SCI/Network/QExtendedTcpServer.h SCI/Utility.h SCI/Graphics/MarchingCubes.h SCI/BoundingBox.h GL/oglTextureRECT.h GL/oglTexture3D.h GL/oglTexture2D.h GL/oglTexture1D.h GL/oglTexture.h GL/oglFrameBufferObject.h GL/oglCommon.h GL/oglShader.h SCI/Camera/ThirdPersonCameraControls.h SCI/Camera/Projection.h SCI/Camera/OrthoProjection.h SCI/Camera/LookAt.h SCI/Camera/FrustumProjection.h SCI/Camera/FirstPersonCameraControls.h SCI/Camera/CameraControls.h SCI/Colormap.h GL/oglFont.h SCI/VexN.h QT/QControlWidget.h QT/QExtendedMainWindow.h SCI/Geometry/CompGeom.h GL/glext.h QT/QExtendedVerticalSlider.h QT/QDoubleSlider.h SCI/SimpleHistogram.h $(DISTDIR)/
-	$(COPY_FILE) --parents GL/oglTextureRECT.cpp GL/oglTexture3D.cpp GL/oglTexture2D.cpp GL/oglTexture1D.cpp GL/oglTexture.cpp GL/oglFrameBufferObject.cpp GL/oglCommon.cpp GL/oglShader.cpp SCI/Timer.cpp SCI/Mat4.cpp SCI/Subset.cpp SCI/Graphics/MarchingCubes.cpp SCI/Camera/ThirdPersonCameraControls.cpp SCI/Camera/OrthoProjection.cpp SCI/Camera/LookAt.cpp SCI/Camera/FrustumProjection.cpp SCI/Camera/FirstPersonCameraControls.cpp SCI/Camera/CameraControls.cpp SCI/Colormap.cpp GL/oglFont.cpp QT/QExtendedMainWindow.cpp QT/QControlWidget.cpp QT/QExtendedVerticalSlider.cpp QT/QDoubleSlider.cpp SCI/SimpleHistogram.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents GL/oglTextureRECT.h GL/oglTexture3D.h GL/oglTexture2D.h GL/oglTexture1D.h GL/oglTexture.h GL/oglFrameBufferObject.h GL/oglCommon.h GL/oglShader.h GL/oglFont.h GL/glext.h $(DISTDIR)/
+	$(COPY_FILE) --parents GL/oglTextureRECT.cpp GL/oglTexture3D.cpp GL/oglTexture2D.cpp GL/oglTexture1D.cpp GL/oglTexture.cpp GL/oglFrameBufferObject.cpp GL/oglCommon.cpp GL/oglShader.cpp GL/oglFont.cpp $(DISTDIR)/
 
 
 clean:compiler_clean 
@@ -455,59 +364,8 @@ check: first
 
 compiler_rcc_make_all:
 compiler_rcc_clean:
-compiler_moc_header_make_all: bin/build/common_lib/.moc/moc_QExtendedTcpSocket.cpp bin/build/common_lib/.moc/moc_QExtendedTcpServer.cpp bin/build/common_lib/.moc/moc_Projection.cpp bin/build/common_lib/.moc/moc_OrthoProjection.cpp bin/build/common_lib/.moc/moc_FrustumProjection.cpp bin/build/common_lib/.moc/moc_QControlWidget.cpp bin/build/common_lib/.moc/moc_QExtendedMainWindow.cpp bin/build/common_lib/.moc/moc_QExtendedVerticalSlider.cpp bin/build/common_lib/.moc/moc_QDoubleSlider.cpp
+compiler_moc_header_make_all:
 compiler_moc_header_clean:
-	-$(DEL_FILE) bin/build/common_lib/.moc/moc_QExtendedTcpSocket.cpp bin/build/common_lib/.moc/moc_QExtendedTcpServer.cpp bin/build/common_lib/.moc/moc_Projection.cpp bin/build/common_lib/.moc/moc_OrthoProjection.cpp bin/build/common_lib/.moc/moc_FrustumProjection.cpp bin/build/common_lib/.moc/moc_QControlWidget.cpp bin/build/common_lib/.moc/moc_QExtendedMainWindow.cpp bin/build/common_lib/.moc/moc_QExtendedVerticalSlider.cpp bin/build/common_lib/.moc/moc_QDoubleSlider.cpp
-bin/build/common_lib/.moc/moc_QExtendedTcpSocket.cpp: SCI/Vex2.h \
-		SCI/Utility.h \
-		SCI/Vex3.h \
-		SCI/Vex4.h \
-		SCI/Network/QExtendedTcpSocket.h
-	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/behollis/workspace/prosen-common -I/home/behollis/workspace/prosen-common/include -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/x86_64-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/x86_64-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include SCI/Network/QExtendedTcpSocket.h -o bin/build/common_lib/.moc/moc_QExtendedTcpSocket.cpp
-
-bin/build/common_lib/.moc/moc_QExtendedTcpServer.cpp: SCI/Network/QExtendedTcpServer.h
-	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/behollis/workspace/prosen-common -I/home/behollis/workspace/prosen-common/include -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/x86_64-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/x86_64-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include SCI/Network/QExtendedTcpServer.h -o bin/build/common_lib/.moc/moc_QExtendedTcpServer.cpp
-
-bin/build/common_lib/.moc/moc_Projection.cpp: SCI/Mat4.h \
-		SCI/Vex2.h \
-		SCI/Utility.h \
-		SCI/Vex3.h \
-		SCI/Vex4.h \
-		SCI/Camera/Projection.h
-	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/behollis/workspace/prosen-common -I/home/behollis/workspace/prosen-common/include -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/x86_64-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/x86_64-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include SCI/Camera/Projection.h -o bin/build/common_lib/.moc/moc_Projection.cpp
-
-bin/build/common_lib/.moc/moc_OrthoProjection.cpp: SCI/Camera/Projection.h \
-		SCI/Mat4.h \
-		SCI/Vex2.h \
-		SCI/Utility.h \
-		SCI/Vex3.h \
-		SCI/Vex4.h \
-		SCI/Camera/OrthoProjection.h
-	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/behollis/workspace/prosen-common -I/home/behollis/workspace/prosen-common/include -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/x86_64-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/x86_64-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include SCI/Camera/OrthoProjection.h -o bin/build/common_lib/.moc/moc_OrthoProjection.cpp
-
-bin/build/common_lib/.moc/moc_FrustumProjection.cpp: SCI/Camera/Projection.h \
-		SCI/Mat4.h \
-		SCI/Vex2.h \
-		SCI/Utility.h \
-		SCI/Vex3.h \
-		SCI/Vex4.h \
-		SCI/Camera/FrustumProjection.h
-	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/behollis/workspace/prosen-common -I/home/behollis/workspace/prosen-common/include -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/x86_64-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/x86_64-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include SCI/Camera/FrustumProjection.h -o bin/build/common_lib/.moc/moc_FrustumProjection.cpp
-
-bin/build/common_lib/.moc/moc_QControlWidget.cpp: QT/QDoubleSlider.h \
-		QT/QExtendedVerticalSlider.h \
-		QT/QControlWidget.h
-	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/behollis/workspace/prosen-common -I/home/behollis/workspace/prosen-common/include -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/x86_64-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/x86_64-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include QT/QControlWidget.h -o bin/build/common_lib/.moc/moc_QControlWidget.cpp
-
-bin/build/common_lib/.moc/moc_QExtendedMainWindow.cpp: QT/QExtendedMainWindow.h
-	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/behollis/workspace/prosen-common -I/home/behollis/workspace/prosen-common/include -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/x86_64-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/x86_64-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include QT/QExtendedMainWindow.h -o bin/build/common_lib/.moc/moc_QExtendedMainWindow.cpp
-
-bin/build/common_lib/.moc/moc_QExtendedVerticalSlider.cpp: QT/QExtendedVerticalSlider.h
-	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/behollis/workspace/prosen-common -I/home/behollis/workspace/prosen-common/include -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/x86_64-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/x86_64-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include QT/QExtendedVerticalSlider.h -o bin/build/common_lib/.moc/moc_QExtendedVerticalSlider.cpp
-
-bin/build/common_lib/.moc/moc_QDoubleSlider.cpp: QT/QDoubleSlider.h
-	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/behollis/workspace/prosen-common -I/home/behollis/workspace/prosen-common/include -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/x86_64-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/x86_64-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include QT/QDoubleSlider.h -o bin/build/common_lib/.moc/moc_QDoubleSlider.cpp
-
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
 compiler_uic_make_all:
@@ -518,7 +376,7 @@ compiler_yacc_impl_make_all:
 compiler_yacc_impl_clean:
 compiler_lex_make_all:
 compiler_lex_clean:
-compiler_clean: compiler_moc_header_clean 
+compiler_clean: 
 
 ####### Compile
 
@@ -563,140 +421,9 @@ bin/build/common_lib/.obj/oglShader.o: GL/oglShader.cpp GL/glew.h \
 		GL/oglCommon.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bin/build/common_lib/.obj/oglShader.o GL/oglShader.cpp
 
-bin/build/common_lib/.obj/Timer.o: SCI/Timer.cpp SCI/Timer.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bin/build/common_lib/.obj/Timer.o SCI/Timer.cpp
-
-bin/build/common_lib/.obj/Mat4.o: SCI/Mat4.cpp SCI/Mat4.h \
-		SCI/Vex2.h \
-		SCI/Utility.h \
-		SCI/Vex3.h \
-		SCI/Vex4.h \
-		GL/oglCommon.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bin/build/common_lib/.obj/Mat4.o SCI/Mat4.cpp
-
-bin/build/common_lib/.obj/Subset.o: SCI/Subset.cpp SCI/Subset.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bin/build/common_lib/.obj/Subset.o SCI/Subset.cpp
-
-bin/build/common_lib/.obj/MarchingCubes.o: SCI/Graphics/MarchingCubes.cpp SCI/Graphics/MarchingCubes.h \
-		SCI/Vex3.h \
-		SCI/Vex2.h \
-		SCI/Utility.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bin/build/common_lib/.obj/MarchingCubes.o SCI/Graphics/MarchingCubes.cpp
-
-bin/build/common_lib/.obj/ThirdPersonCameraControls.o: SCI/Camera/ThirdPersonCameraControls.cpp SCI/Camera/ThirdPersonCameraControls.h \
-		SCI/Camera/CameraControls.h \
-		SCI/Mat4.h \
-		SCI/Vex2.h \
-		SCI/Utility.h \
-		SCI/Vex3.h \
-		SCI/Vex4.h \
-		SCI/Camera/LookAt.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bin/build/common_lib/.obj/ThirdPersonCameraControls.o SCI/Camera/ThirdPersonCameraControls.cpp
-
-bin/build/common_lib/.obj/OrthoProjection.o: SCI/Camera/OrthoProjection.cpp SCI/Camera/OrthoProjection.h \
-		SCI/Camera/Projection.h \
-		SCI/Mat4.h \
-		SCI/Vex2.h \
-		SCI/Utility.h \
-		SCI/Vex3.h \
-		SCI/Vex4.h \
-		GL/oglCommon.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bin/build/common_lib/.obj/OrthoProjection.o SCI/Camera/OrthoProjection.cpp
-
-bin/build/common_lib/.obj/LookAt.o: SCI/Camera/LookAt.cpp SCI/Camera/LookAt.h \
-		SCI/Mat4.h \
-		SCI/Vex2.h \
-		SCI/Utility.h \
-		SCI/Vex3.h \
-		SCI/Vex4.h \
-		GL/oglCommon.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bin/build/common_lib/.obj/LookAt.o SCI/Camera/LookAt.cpp
-
-bin/build/common_lib/.obj/FrustumProjection.o: SCI/Camera/FrustumProjection.cpp SCI/Camera/FrustumProjection.h \
-		SCI/Camera/Projection.h \
-		SCI/Mat4.h \
-		SCI/Vex2.h \
-		SCI/Utility.h \
-		SCI/Vex3.h \
-		SCI/Vex4.h \
-		GL/oglCommon.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bin/build/common_lib/.obj/FrustumProjection.o SCI/Camera/FrustumProjection.cpp
-
-bin/build/common_lib/.obj/FirstPersonCameraControls.o: SCI/Camera/FirstPersonCameraControls.cpp SCI/Camera/FirstPersonCameraControls.h \
-		SCI/Camera/CameraControls.h \
-		SCI/Mat4.h \
-		SCI/Vex2.h \
-		SCI/Utility.h \
-		SCI/Vex3.h \
-		SCI/Vex4.h \
-		SCI/Camera/LookAt.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bin/build/common_lib/.obj/FirstPersonCameraControls.o SCI/Camera/FirstPersonCameraControls.cpp
-
-bin/build/common_lib/.obj/CameraControls.o: SCI/Camera/CameraControls.cpp SCI/Camera/CameraControls.h \
-		SCI/Mat4.h \
-		SCI/Vex2.h \
-		SCI/Utility.h \
-		SCI/Vex3.h \
-		SCI/Vex4.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bin/build/common_lib/.obj/CameraControls.o SCI/Camera/CameraControls.cpp
-
-bin/build/common_lib/.obj/Colormap.o: SCI/Colormap.cpp SCI/Colormap.h \
-		SCI/Vex4.h \
-		SCI/Vex3.h \
-		SCI/Vex2.h \
-		SCI/Utility.h \
-		GL/oglFont.h \
-		GL/oglCommon.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bin/build/common_lib/.obj/Colormap.o SCI/Colormap.cpp
-
 bin/build/common_lib/.obj/oglFont.o: GL/oglFont.cpp GL/oglFont.h \
 		GL/oglCommon.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bin/build/common_lib/.obj/oglFont.o GL/oglFont.cpp
-
-bin/build/common_lib/.obj/QExtendedMainWindow.o: QT/QExtendedMainWindow.cpp QT/QExtendedMainWindow.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bin/build/common_lib/.obj/QExtendedMainWindow.o QT/QExtendedMainWindow.cpp
-
-bin/build/common_lib/.obj/QControlWidget.o: QT/QControlWidget.cpp QT/QControlWidget.h \
-		QT/QDoubleSlider.h \
-		QT/QExtendedVerticalSlider.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bin/build/common_lib/.obj/QControlWidget.o QT/QControlWidget.cpp
-
-bin/build/common_lib/.obj/QExtendedVerticalSlider.o: QT/QExtendedVerticalSlider.cpp QT/QExtendedVerticalSlider.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bin/build/common_lib/.obj/QExtendedVerticalSlider.o QT/QExtendedVerticalSlider.cpp
-
-bin/build/common_lib/.obj/QDoubleSlider.o: QT/QDoubleSlider.cpp QT/QDoubleSlider.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bin/build/common_lib/.obj/QDoubleSlider.o QT/QDoubleSlider.cpp
-
-bin/build/common_lib/.obj/SimpleHistogram.o: SCI/SimpleHistogram.cpp SCI/SimpleHistogram.h \
-		SCI/Utility.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bin/build/common_lib/.obj/SimpleHistogram.o SCI/SimpleHistogram.cpp
-
-bin/build/common_lib/.obj/moc_QExtendedTcpSocket.o: bin/build/common_lib/.moc/moc_QExtendedTcpSocket.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bin/build/common_lib/.obj/moc_QExtendedTcpSocket.o bin/build/common_lib/.moc/moc_QExtendedTcpSocket.cpp
-
-bin/build/common_lib/.obj/moc_QExtendedTcpServer.o: bin/build/common_lib/.moc/moc_QExtendedTcpServer.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bin/build/common_lib/.obj/moc_QExtendedTcpServer.o bin/build/common_lib/.moc/moc_QExtendedTcpServer.cpp
-
-bin/build/common_lib/.obj/moc_Projection.o: bin/build/common_lib/.moc/moc_Projection.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bin/build/common_lib/.obj/moc_Projection.o bin/build/common_lib/.moc/moc_Projection.cpp
-
-bin/build/common_lib/.obj/moc_OrthoProjection.o: bin/build/common_lib/.moc/moc_OrthoProjection.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bin/build/common_lib/.obj/moc_OrthoProjection.o bin/build/common_lib/.moc/moc_OrthoProjection.cpp
-
-bin/build/common_lib/.obj/moc_FrustumProjection.o: bin/build/common_lib/.moc/moc_FrustumProjection.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bin/build/common_lib/.obj/moc_FrustumProjection.o bin/build/common_lib/.moc/moc_FrustumProjection.cpp
-
-bin/build/common_lib/.obj/moc_QControlWidget.o: bin/build/common_lib/.moc/moc_QControlWidget.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bin/build/common_lib/.obj/moc_QControlWidget.o bin/build/common_lib/.moc/moc_QControlWidget.cpp
-
-bin/build/common_lib/.obj/moc_QExtendedMainWindow.o: bin/build/common_lib/.moc/moc_QExtendedMainWindow.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bin/build/common_lib/.obj/moc_QExtendedMainWindow.o bin/build/common_lib/.moc/moc_QExtendedMainWindow.cpp
-
-bin/build/common_lib/.obj/moc_QExtendedVerticalSlider.o: bin/build/common_lib/.moc/moc_QExtendedVerticalSlider.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bin/build/common_lib/.obj/moc_QExtendedVerticalSlider.o bin/build/common_lib/.moc/moc_QExtendedVerticalSlider.cpp
-
-bin/build/common_lib/.obj/moc_QDoubleSlider.o: bin/build/common_lib/.moc/moc_QDoubleSlider.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bin/build/common_lib/.obj/moc_QDoubleSlider.o bin/build/common_lib/.moc/moc_QDoubleSlider.cpp
 
 ####### Install
 
